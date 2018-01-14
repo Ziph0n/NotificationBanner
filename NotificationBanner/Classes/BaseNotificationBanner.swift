@@ -297,7 +297,7 @@ public class BaseNotificationBanner: UIView {
                 if statusBarShouldBeShown() && !(parentViewController == nil && bannerPosition == .top) {
                     appWindow.windowLevel = UIWindowLevelNormal
                 } else {
-                    appWindow.windowLevel = UIWindowLevelStatusBar + 1
+                    appWindow.windowLevel = UIWindowLevelStatusBar - 1
                 }
             }
             
